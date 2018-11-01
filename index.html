@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=10"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1" /> 
+
+
+
+   
+
+    <!--load-->
+    <script src="js/jquery-1.12.0.min.js"></script>
+    <script type="text/javascript" src="js/leaflet.js"></script>
+    <script type="text/javascript" src="js/zoomify_layer.js"></script>
+    <script type="text/javascript" src="js/L.TileLayer.Zoomify.js"></script>
+    <link rel="stylesheet" href="css/leaflet.css" type="text/css">
+    <script src="js/main.js"></script>
+    <link href='css/main.css' rel='stylesheet' type='text/css'>
+
+</head>
+
+<body>
+    
+<div class="warn">
+ <p>For a full experience, try it on your computer!</p>
+</div>
+
+
+
+<div id="mapa"></div>
+
+<div class="gradl"></div>
+<div class="gradr"></div>
+
+<div class="ia" onclick="about()"><img src="img/A.svg"></div>
+<div id="about">
+ <div class="square">
+  <div class="x" onclick="about()">X</div>
+ <h1>About</h1>
+ <h2>How does [...] paint the city?</h2>
+<p>
+The main goal of this visualization is to draw the city through activities that citizens do on a daily basis: living, breathing, buying food, cycling and buying clothes.
+The representation strategy depicts the contrasts within the city bounds depending on the theme analyzed. Where do people live, which zones have cleaner air, where are the clothing stores located, where does commerce have a strong presence and which areas offer better cycling conditions.</p>
+<h2>Made by</h2>
+ <p>Alba Alsina & Aleix Arcarons</p>
+
+  <h2>Datasets</h2>
+ <p>
+  <ul>Dades urbanístiques de les illes de la ciutat de Barcelona</ul>
+<ul>Sede electrónica del cadastro</ul>
+<ul>Estacions de Bicing de la ciutat de Barcelona (Mecàniques i elèctriques)</ul>
+<ul>Carrils bici de la ciutat de Barcelona</ul>
+<ul>Zones 30 a la ciutat de Barcelona</ul>
+<ul>Arbrat de zona de la ciutat de Barcelona</ul>
+<ul>ED50. Usós del sòl en format SHP</ul>
+<ul>Inventari de locals de la ciutat de Barcelona</ul>
+<ul>Punts wifi de la ciutat de Barcelona</ul>
+</p>
+ <h2>Tools and software</h2>
+ <p>
+  <a href="https://leafletjs.com/" target="blank">leaflet </a>
+  <a href="https://github.com/kalse/zoomify-layer" target="blank">/ zoomify</a>
+</p>
+  
+</div>
+ </div>
+
+
+<div class="il" onclick="llegenda()"><img src="img/L.svg"></div>
+<div id="llegenda">
+ <div class="square">
+<div class="x" onclick="llegenda()">X</div>
+<img src="img/llegenda.png"></img>
+  
+</div>
+ </div>
+<div class="how">how does...</div>
+<div class="city">paint the city?
+</div>
+
+<div class="right">
+ <div class="zoom">(zoom to see more!)</div>
+</div>
+
+
+
+
+
+</body>
+
+</html>
